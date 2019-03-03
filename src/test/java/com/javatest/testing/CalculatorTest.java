@@ -50,6 +50,11 @@ public class CalculatorTest {
         calculator.squareRoot();
     }
 
+    @Test(timeout = 5000)
+    public void testSquareRootLong(){
+        calculator.squareRoot();
+    }
+
     @Test(expected = ArithmeticException.class)
     public void divideByZero(){
         calculator.divide(0);
